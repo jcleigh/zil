@@ -202,5 +202,15 @@ calls:
                      <TELL "Even a master chef couldn't cook an avocado with what you've got!" CR>)>>
 ```
 
+---
 
 ## Room Action Routines
+```
+    <ROUTINE CAFETERIA-F (RARG)
+        <COND (<EQUAL? .RARG ,M-LOOK>
+               <TELL "This is a lunch room, with windows overlooking a loading dock. ">
+               <COND (<IN? LUNCH-CROWD ,CAFETERIA>
+                      <TELL "Every table is jammed with patrons. ">)>
+               <TELL "The only exit is north. CR>)>>
+```
+
